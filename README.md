@@ -7,7 +7,7 @@ Using [AR.js](https://github.com/jeromeetienne/AR.js) we can achieve augmented r
 
 The following are workarounds for actual known AR.js bugs with custom markers:
 
-- Please use following attributes and a remote url for the pattern url:
+- Please use the following attributes and a remote url for the pattern url:
 
     ```
         <a-marker-camera preset='custom' type="pattern" url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/pattern-marker.patt'>
@@ -28,7 +28,13 @@ When the camera will focus on the custom marker, the default 3D model will appea
 
 ## Custom Markers
 
-Custom markers must be simple images, much better if they are symbols/text. A custom market will contain a pattern (as you can see on file `pattern-marker.js`) that 'sintetize' the input image. Background of input image has to be light grey and not white or transparent (like `F0F0F0`).
+Custom markers must be simple symbols or alphanumeric text. They has to be parsed (technically 'trained') by the online tool that, from a given image as input, will outputs a custom marker pattern. Looking at a .patt file it's possible to see the pattern that has been created from the original image.
 
-Useful links: https://github.com/jeromeetienne/AR.js/issues/234
+Background of input image has to be light grey and not white or transparent (like `F0F0F0`).
+
+Useful links for markers: 
+- https://github.com/jeromeetienne/AR.js/issues/234
+- a set of general guidelines for markers and their suggested characteristics: https://wiki.kudan.eu/What_Makes_a_Good_Marker%3F
+
+
 
