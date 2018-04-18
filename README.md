@@ -34,6 +34,7 @@ Background of input image has to be light grey and not white or transparent (lik
 
 Useful links for markers: 
 - https://github.com/jeromeetienne/AR.js/issues/234
+- https://aframe.io/blog/arjs/#customize-your-marker
 
 WIP
 
