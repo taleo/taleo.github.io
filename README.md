@@ -34,7 +34,7 @@ Background of input image has to be light grey and not white or transparent (lik
 
 Useful links for markers: 
 - https://github.com/jeromeetienne/AR.js/issues/234
-- a set of general guidelines for markers and their suggested characteristics: https://wiki.kudan.eu/What_Makes_a_Good_Marker%3F
 
+WIP
 
 
