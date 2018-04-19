@@ -36,6 +36,3 @@ Useful links for markers:
 - https://github.com/jeromeetienne/AR.js/issues/234
 - https://aframe.io/blog/arjs/#customize-your-marker
 
-WIP
-
-
