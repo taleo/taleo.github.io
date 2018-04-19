@@ -10,7 +10,7 @@ The following are workarounds for current known AR.js bugs with custom markers:
 - Please use the following attributes and a remote url for the pattern url:
 
     ```
-        <a-marker-camera preset='custom' type="pattern" url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/pattern-marker.patt'>
+        <a-marker preset='custom' type="pattern" url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/pattern-marker.patt'>
 
     ```
 
