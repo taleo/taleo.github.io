@@ -24,6 +24,8 @@ Visit (http://nicolocarpignoli.github.io/ar-playground/index.html); this is the 
 
 Print on a paper or show on a screen the custom marker(s). The marker has to be exactly the same that the tool has generated (it has generated a .patt file and and an image to download).
 
+For example, visiting [this resource](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/blob/master/ar-playground/y-pattern-image.png) with previously linked app will show a yellow 3D cube near the displayed marker. 
+
 When the camera will focus on the custom marker, the default 3D model will appear.
 
 ## Custom Markers
