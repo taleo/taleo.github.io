@@ -4,7 +4,7 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
     <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-    <a-scene embedded artoolkit='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+    <a-scene arjs artoolkit='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
     <!-- this two following a-marker will be confused as blue image and red image patterns are very similar -->
     <a-marker preset='custom' type="pattern" url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/red-pattern-marker.patt'>
