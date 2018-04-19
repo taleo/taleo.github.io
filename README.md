@@ -28,6 +28,8 @@ When the camera will focus on the custom marker, the default 3D model will appea
 
 ## Custom Markers
 
+### Pattern Markers
+
 Custom markers **must** be simple symbols or alphanumeric text. They has to be parsed (technically 'trained') by the online tool that, from a given image as input, will outputs a custom marker pattern. Looking at a .patt file it's possible to see the pattern that has been created from the original image.
 
 Background of input image has to be light grey and not white or transparent (like `F0F0F0`).
@@ -35,4 +37,13 @@ Background of input image has to be light grey and not white or transparent (lik
 Useful links for markers: 
 - https://github.com/jeromeetienne/AR.js/issues/234
 - https://aframe.io/blog/arjs/#customize-your-marker
+
+### Barcode Markers
+
+Markers can also be barcodes. An example is provided in `index.html`. Barcodes represent a number as a symbol based on a matrix. It is better to choose barcodes with a matrix that has the highest level of hamming distance (see [this table](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md)). 
+
+Barcodes markers, based on their matrix, have a specified and variable maximum number of possible generated markers.
+
+- Barcode marker generator: http://au.gmented.com/app/marker/marker.php
+- Important informations on barcode markers: https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md
 
