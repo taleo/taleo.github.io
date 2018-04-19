@@ -56,3 +56,7 @@ Keep in mind to avoid, if possible, white/transparent color in barcode markers t
 - Barcode marker generator: http://au.gmented.com/app/marker/marker.php
 - Important informations on barcode markers: https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md
 
+### Other useful links
+
+Supported 3D model types: (https://medium.com/@akashkuttappa/using-3d-models-with-ar-js-and-a-frame-84d462efe498=)
+
