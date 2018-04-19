@@ -1,11 +1,11 @@
 # nicolocarpignoli.github.io
-Actually just a playground for AR.js
+Just a playground for AR.js
 
-## Actual working setup for AR.js
+## Current working setup for AR.js
 
 Using [AR.js](https://github.com/jeromeetienne/AR.js) we can achieve augmented reality using custom-markers.
 
-The following are workarounds for actual known AR.js bugs with custom markers:
+The following are workarounds for current known AR.js bugs with custom markers:
 
 - Please use the following attributes and a remote url for the pattern url:
 
@@ -20,21 +20,22 @@ The following are workarounds for actual known AR.js bugs with custom markers:
 
 ## Demo
 
-Visit http://nicolocarpignoli.github.io; this is the app that contains AR logic and will use the camera. Please visit that on a mobile device.
+Visit http://nicolocarpignoli.github.io/ar-playground/index.html; this is the app that contains AR logic and will use the camera. Please visit that on a mobile device.
 
-Print on a paper or show on a screen the custom marker. The marker has to be exactly the same that the previously used tool has generated (it has generated a .patt file and and image to download).
+Print on a paper or show on a screen the custom marker(s). The marker has to be exactly the same that the previously used tool has generated (it has generated a .patt file and and an image to download).
 
 When the camera will focus on the custom marker, the default 3D model will appear.
 
 ## Custom Markers
 
-Custom markers must be simple symbols or alphanumeric text. They has to be parsed (technically 'trained') by the online tool that, from a given image as input, will outputs a custom marker pattern. Looking at a .patt file it's possible to see the pattern that has been created from the original image.
+Custom markers **must** be simple symbols or alphanumeric text. They has to be parsed (technically 'trained') by the online tool that, from a given image as input, will outputs a custom marker pattern. Looking at a .patt file it's possible to see the pattern that has been created from the original image.
 
 Background of input image has to be light grey and not white or transparent (like `F0F0F0`).
 
 Useful links for markers: 
 - https://github.com/jeromeetienne/AR.js/issues/234
-- a set of general guidelines for markers and their suggested characteristics: https://wiki.kudan.eu/What_Makes_a_Good_Marker%3F
+- https://aframe.io/blog/arjs/#customize-your-marker
 
+WIP
 
 
