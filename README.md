@@ -41,8 +41,8 @@ The more the marker has a recognizible and distinct pattern, the more it will no
 Please avoid using markers with text because they can be easily mis-recognized; it's better to use a letter, a number or a symbol. Always check for the generated .patt file that represent the actual used pattern; it will indicate the pattern used by the camera, and it will be possible to see differences between patterns, to avoid similarities.
 
 Useful links for markers: 
-- https://github.com/jeromeetienne/AR.js/issues/234
-- https://aframe.io/blog/arjs/#customize-your-marker
+- (https://github.com/jeromeetienne/AR.js/issues/234)
+- (https://aframe.io/blog/arjs/#customize-your-marker)
 
 ### Barcode Markers
 
@@ -53,10 +53,10 @@ TL;DR: barcode markers are defined by a matrix that will set specific limits on:
 
 Keep in mind to avoid, if possible, white/transparent color in barcode markers too (this is not confirmed on barcode markers but based on empirics).
 
-- Barcode marker generator: http://au.gmented.com/app/marker/marker.php
-- Important informations on barcode markers: https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md
+- Barcode marker generator: (http://au.gmented.com/app/marker/marker.php)
+- Important informations on barcode markers: (https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md)
 
 ### Other useful links
 
-Supported 3D model types: (https://medium.com/@akashkuttappa/using-3d-models-with-ar-js-and-a-frame-84d462efe498=)
+Supported 3D model types: (https://medium.com/@akashkuttappa/using-3d-models-with-ar-js-and-a-frame-84d462efe498)
 
