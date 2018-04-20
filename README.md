@@ -24,9 +24,9 @@ Visit (http://nicolocarpignoli.github.io/ar-playground/index.html); this is the 
 
 Print on a paper or show on a screen the custom marker(s). The marker has to be exactly the same that the tool has generated (it has generated a .patt file and and an image to download).
 
-For example, visiting [this resource](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/blob/master/ar-playground/y-pattern-image.png) with previously linked app will show a yellow 3D cube near the displayed marker. 
-
 When the camera will focus on the custom marker, the default 3D model will appear.
+
+For example, visiting [this resource](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/blob/master/ar-playground/y-pattern-image.png) with previously linked app will show a yellow 3D cube next to the marker. 
 
 ## Custom Markers
 
@@ -49,7 +49,7 @@ Useful links for markers:
 Markers can also be barcodes. An example is provided in `index.html`. Barcodes represent a number as a symbol created based on a matrix. It is better to choose barcodes with a matrix that has the highest level of hamming distance (see [this table](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md)), so camera can recognize it better.
 Barcodes markers, based on their matrix, have a specified and variable maximum number of possible generated markers.
 
-TL;DR: barcode markers are defined by a matrix that will set specific limits on: difficulty level of recognization by the camera and maximum number of possible generated markers.
+TL;DR: barcode markers are defined by a matrix that will set specific limits on: detection precision by the camera and maximum number of possible generated markers.
 
 Keep in mind to avoid, if possible, white/transparent color in barcode markers too (this is not confirmed on barcode markers but based on empirics).
 
