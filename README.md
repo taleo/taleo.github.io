@@ -59,4 +59,5 @@ Keep in mind to avoid, if possible, white/transparent color in barcode markers t
 ### Other useful links
 
 Supported 3D model types: (https://medium.com/@akashkuttappa/using-3d-models-with-ar-js-and-a-frame-84d462efe498)
+Ready-to-use patterns: (https://github.com/artoolkit/artoolkit5/tree/master/doc/patterns)
 
