@@ -25,8 +25,9 @@
     <a-marker type='barcode' value='7'>
         <!-- custom 3D model -->
         <a-text value="I'm a cat!"></a-text>
-        <a-entity obj-model="obj: #cat-obj; mtl: #cat-mtl"></a-entity>
+        <!-- <a-entity obj-model="obj: #cat-obj; mtl: #cat-mtl"></a-entity> -->
     </a-marker>
+    <a-box position='0 0.5 0' material='opacity: 0.5; side:double; color:red;'></a-box>
 
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
   	<a-entity camera></a-entity>
