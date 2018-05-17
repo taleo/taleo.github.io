@@ -4,7 +4,7 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
     <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-    <a-scene embedded arjs='debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3; sourceType: webcam'>
+    <a-scene embedded arjs='debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
     <!-- this two following a-marker will be confused as blue image and red image patterns are very similar -->
     <!-- <a-marker preset='custom' type="pattern" url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/red-pattern-marker.patt'>
@@ -20,8 +20,7 @@
     <!-- Here I'm telling ar.js to show a yellow box when he recognize one  -->
     <a-marker type='barcode' value='7'>
         <!-- custom 3D model -->
-        <a-entityh
-            obj-model="obj: url('https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.obj'); mtl: url('https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.mtl')">
+        <a-entity obj-model="obj: url('https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.obj'); mtl: url('https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.mtl')">
         </a-entity>
     </a-marker>
 
