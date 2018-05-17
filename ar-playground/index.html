@@ -6,10 +6,15 @@
     <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
     <a-scene embedded arjs='debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
 
+    <a-assets>
+        <a-asset-item id="cat-obj" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.obj"></a-asset-item>
+        <a-asset-item id="cat-mtl" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.mtl"></a-asset-item>
+    </a-assets>
+
     <!-- this two following a-marker will be confused as blue image and red image patterns are very similar -->
     <a-marker preset='custom' type="pattern" url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/red-pattern-marker.patt'>
-        <a-entity obj-model="obj: url('https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.obj'); mtl: url('https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.mtl')">
-        </a-marker>
+        <a-entity obj-model="obj: #cat-obj; mtl: #cat-mtl"></a-entity>
+    </a-marker>
     <!-- <a-marker preset='custom' type="pattern" url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/blue-pattern-marker.patt'>
       <a-box position='0 0.5 0' material='color: blue;'></a-box>
     </a-marker>
@@ -20,8 +25,7 @@
     <!-- Here I'm telling ar.js to show a yellow box when he recognize one  -->
     <a-marker type='barcode' value='7'>
         <!-- custom 3D model -->
-        <a-entity obj-model="obj: url('https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.obj'); mtl: url('https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/cat-model/cat.mtl')">
-        </a-entity>
+        <a-entity obj-model="obj: #cat-obj; mtl: #cat-mtl"></a-entity>
     </a-marker>
 
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
