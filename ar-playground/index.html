@@ -4,7 +4,7 @@
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
   <body style='margin : 0px; overflow: hidden;'>
     <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
-    <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false;' hidden>
+    <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' hidden>
 
     <a-assets>
         <a-asset-item id="cat-obj" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/stormtrooper.obj"></a-asset-item>
