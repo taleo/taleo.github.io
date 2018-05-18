@@ -12,23 +12,23 @@
     </a-assets>
 
     <!-- this two following a-marker will be confused as blue image and red image patterns are very similar -->
-    <a-marker preset='custom' type="pattern" url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/vertical.patt'>
+    <a-marker-camera preset='custom' type="pattern" url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/vertical.patt'>
         <!-- <a-text value="I'm a cat!"></a-text>
         <a-box position='0 0.5 0' material='color: red;'></a-box> -->
         <a-entity obj-model="obj: #cat-obj;"></a-entity>
 
-    </a-marker>
+    </a-marker-camera>
 
     <!-- I created and printed a barcode of 3x3 matrix with value of '7' with external online generator -->
     <!-- Here I'm telling ar.js to show a yellow box when he recognize one  -->
-    <a-marker type='barcode' value='7'>
+    <a-marker-camera type='barcode' value='7'>
         <!-- custom 3D model -->
         <!-- <a-text value="I'm a cat!"></a-text> -->
         <a-box position='0 0.5 0' material='color: black;'></a-box>
-    </a-marker>
+    </a-marker-camera>
 
     <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
-  	<a-entity camera></a-entity>
+  	<!-- <a-entity camera></a-entity> -->
     </a-scene>
   </body>
 </html>
