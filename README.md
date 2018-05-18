@@ -1,6 +1,8 @@
 # nicolocarpignoli.github.io
 Just a playground for AR.js
 
+For a full detailed article about AR.js and markers please take a look at (https://medium.com/chialab-open-source/ar-js-the-simpliest-way-to-get-cross-browser-ar-on-the-web-8f670dd45462).
+
 ## Current working setup for AR.js
 
 Using [AR.js](https://github.com/jeromeetienne/AR.js) we can achieve augmented reality using custom-markers.
@@ -39,6 +41,8 @@ Background of input image has to be light grey (like `F0F0F0`) and not white or 
 The more the marker has a recognizible and distinct pattern, the more it will not be mis-recognize from cameras. Markers has to be not too small (I think minimum size will be like 5x5 cm, better if 8x8 cm) and they have to be squared. They also have to be on grey-scale, with light grey instead of white, and it's suggested to use only two colours (black and light grey).
 
 Please avoid using markers with text because they can be easily mis-recognized; it's better to use a letter, a number or a symbol. Always check for the generated .patt file that represent the actual used pattern; it will indicate the pattern used by the camera, and it will be possible to see differences between patterns, to avoid similarities.
+
+Another important aspect to remember is to have an high contrast between the ‘background’ of the marker and the surrounding environment; for example, if the marker has light grey symbols on black background (as the one showed in the image above), the camera will encounter difficulties on recognize the marker if it is printed and placed on a black desk or displayed on a black screen.
 
 Useful links for markers: 
 - (https://github.com/jeromeetienne/AR.js/issues/234)
