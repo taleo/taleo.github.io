@@ -11,6 +11,15 @@
         <a-asset-item id="cat-mtl" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/stormtrooper.mtl"></a-asset-item>
     </a-assets>
 
+    <a-marker type='pattern' value="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/pattern-marker.patt">
+        <a-box position='0 0.5 0' material='color: green;'></a-box>
+    </a-marker>
+
+    <a-marker type='pattern' value="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/inverted-pattern-marker.patt">
+        <a-box position='0 0.5 0' material='color: green;'></a-box>
+    </a-marker>
+
+
     <!-- I created and printed a barcode of 3x3 matrix with value of '7' with external online generator -->
     <!-- Here I'm telling ar.js to show a yellow box when he recognize one  -->
     <a-marker type='barcode' value='7'>
