@@ -9,32 +9,17 @@
     <a-assets>
         <a-asset-item id="cat-obj" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/stormtrooper.obj"></a-asset-item>
         <a-asset-item id="cat-mtl" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/stormtrooper.mtl"></a-asset-item>
+        <a-asset-item id="animated" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/BrainStem.gltf"></a-asset-item>
     </a-assets>
 
-    <a-marker type='pattern' preset='custom' url="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/pattern-marker.patt">
-        <a-box position='0 0.5 0' material='color: green;'></a-box>
-    </a-marker>
+    <a-assets>
+    </a-assets>
 
-    <a-marker type='pattern' preset='custom' url="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/inverted-pattern-marker.patt">
-        <a-box position='0 0.5 0' material='color: green;'></a-box>
-    </a-marker>
-
-
-    <!-- I created and printed a barcode of 3x3 matrix with value of '7' with external online generator -->
-    <!-- Here I'm telling ar.js to show a yellow box when he recognize one  -->
     <a-marker type='barcode' value='7'>
-        <!-- custom 3D model -->
-        <!-- <a-text value="I'm a cat!"></a-text> -->
-        <a-box position='0 0.5 0' material='color: black;'></a-box>
+        <a-entity gltf-model="#animated"></a-entity>
     </a-marker>
 
-
-
-    <!-- I created and printed a barcode of 3x3 matrix with value of '7' with external online generator -->
-    <!-- Here I'm telling ar.js to show a yellow box when he recognize one  -->
     <a-marker type='barcode' value='6'>
-        <!-- custom 3D model -->
-        <a-text value="I'm a cat!"></a-text>
         <a-entity obj-model="obj: #cat-obj;"></a-entity>
     </a-marker>
 
