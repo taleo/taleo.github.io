@@ -8,23 +8,22 @@
         <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' hidden>
 
         <a-assets>
-            <a-asset-item id="cat-obj" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/stormtrooper.obj"></a-asset-item>
-            <a-asset-item id="cat-mtl" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/stormtrooper.mtl"></a-asset-item>
+            <a-asset-item id="stormtrooper-obj" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/stormtrooper.obj"></a-asset-item>
+            <a-asset-item id="stormtrooper-mtl" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/stormtrooper.mtl"></a-asset-item>
             <a-asset-item id="animated" src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"></a-asset-item>
         </a-assets>
 
         <a-assets>
         </a-assets>
 
-
-
         <a-marker type='barcode' value='7'>
-            <a-entity gltf-model="#animated"></a-entity>
+            <a-entity obj-model="obj: #stormtrooper-obj; mtl: #stormtrooper-mtl"></a-entity>
         </a-marker>
 
         <a-marker type='barcode' value='6'>
+            <!-- a way to render gtlf-model with built-in animation -->
             <a-gltf-model
-                src="https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-playground/models/CesiumMan.gltf"
+                src="#animated"
                 animation-mixer="loop:repeat">
             </a-gltf-model>
         </a-marker>
