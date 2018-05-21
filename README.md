@@ -1,7 +1,7 @@
 # nicolocarpignoli.github.io
 Just a playground for AR.js
 
-For a full detailed article about AR.js and markers please take a look at (https://medium.com/chialab-open-source/ar-js-the-simpliest-way-to-get-cross-browser-ar-on-the-web-8f670dd45462).
+For a full detailed article about AR.js and markers please take a look at https://medium.com/chialab-open-source/ar-js-the-simpliest-way-to-get-cross-browser-ar-on-the-web-8f670dd45462.
 
 ## Current working setup for AR.js
 
@@ -22,13 +22,13 @@ The following are workarounds for current known AR.js bugs with custom markers:
 
 ## Demo
 
-Visit (http://nicolocarpignoli.github.io/ar-playground/index.html); this is the app that contains AR logic and that will use the camera. Please visit that on a mobile device.
+Visit http://nicolocarpignoli.github.io/ar-playground/index.html; this is the app that contains AR logic and that will use the camera. Please visit that on a mobile device.
 
-Print on a paper or show on a screen the custom marker(s). The marker has to be exactly the same that the tool has generated (it has generated a .patt file and and an image to download).
+Print on a paper or show on a screen the custom marker(s). The marker has to be exactly the same that the tool has generated (it generates a .patt file and and an image that has to be downloaded).
 
 When the camera will focus on the custom marker, the default 3D model will appear.
 
-For example, visiting [this resource](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/blob/master/ar-playground/y-pattern-image.png) with previously linked app will show a yellow 3D cube next to the marker. 
+For example, use [this marker](https://github.com/nicolocarpignoli/nicolocarpignoli.github.io/blob/master/ar-playground/y-pattern-image.png) with the previously linked app and it will show a yellow 3D cube next to the marker. 
 
 ## Custom Markers
 
@@ -53,9 +53,9 @@ Useful links for markers:
 Markers can also be barcodes. An example is provided in `index.html`. Barcodes represent a number as a symbol created based on a matrix. It is better to choose barcodes with a matrix that has the highest level of hamming distance (see [this table](https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md)), so camera can recognize it better.
 Barcodes markers, based on their matrix, have a specified and variable maximum number of possible generated markers.
 
-TL;DR: barcode markers are defined by a matrix that will set specific limits on: detection precision by the camera and maximum number of possible generated markers.
+TL;DR: barcode markers are created based on a calculus with a matrix, and that will set specific limits on: detection precision by the camera and maximum number of possible generated markers.
 
-Keep in mind to avoid, if possible, white/transparent color in barcode markers too (this is not confirmed on barcode markers but based on empirics).
+Keep in mind to avoid, if possible, white/transparent color in barcode markers too.
 
 - Barcode marker generator: (http://au.gmented.com/app/marker/marker.php)
 - Important informations on barcode markers: (https://github.com/artoolkit/artoolkit-docs/blob/master/3_Marker_Training/marker_barcode.md)
