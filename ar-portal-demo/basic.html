@@ -1,10 +1,9 @@
-<!-- include a-frame -->
-<script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-<!-- include ar.js for aframe -->
-<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.5/aframe/build/aframe-ar.js"> </script>
-<!-- include aframe-portal-door -->
-<script src='src/aframe-portal-door.js'></script>
-<script src='src/threex-portal-door.js'></script>
+
+<script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+<script src='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-portal-demo/src/aframe-portal-door.js'></script>
+<script src='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-portal-demo/src/threex-portal-door.js'></script>
 
 <body style='margin : 0px; overflow: hidden;'>
 	<!-- Define your 3d scene and enabled ar.js -->
@@ -16,7 +15,9 @@
 
 			<!-- portal 360 with an video -->
 			<!-- <a-portal-door url='videos/pano.webm' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door> -->
-			<a-portal-door url='videos/aframe-city-360.mp4' position='0 0 0' scale='2 2 2' rotation='0 90 0'><a-portal-door>
+            <a-portal-door url='https://raw.githubusercontent.com/nicolocarpignoli/nicolocarpignoli.github.io/master/ar-portal-demo/videos/aframe-city-360.mp4'
+                position='0 0 0' scale='2 2 2' rotation='0 90 0'>
+            <a-portal-door>
 		</a-anchor>
 
 		<a-entity camera></a-entity>
