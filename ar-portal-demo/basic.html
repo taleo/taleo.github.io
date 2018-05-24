@@ -7,9 +7,9 @@
 
 <body style='margin : 0px; overflow: hidden;'>
 	<!-- Define your 3d scene and enabled ar.js -->
-	<a-scene embedded arjs='trackingMethod: best;'>
+    <a-scene embedded arjs='trackingMethod: best; sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;' hidden>
 		<!-- Create a anchor to attach your augmented reality -->
-		<a-anchor hit-testing-enabled='true'>
+		<a-marker type='barcode' value='6'>
 			<!-- portal 360 with an image -->
 			<!-- <a-portal-door url='images/360_topaz.png' position='0 0 0' scale='1 1 1' rotation='0 90 0'><a-portal-door> -->
 
