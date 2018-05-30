@@ -18,17 +18,17 @@ AFRAME.registerComponent('arjs-portal-door', {
     init: () => {
         var _this = this;
 
-        let doorWidth = this.data.doorWidth;
-        let doorHeight = this.data.doorHeight;
-        let imageURL = this.data.url;
+        let doorWidth = _this.data.doorWidth;
+        let doorHeight = _this.data.doorHeight;
+        let imageURL = _this.data.url;
 
         let portalDoor = new THREEx.Portal360(imageURL, doorWidth, doorHeight);
-        this._portalDoor = portalDoor;
+        _this._portalDoor = portalDoor;
 
-        this.el.object3D.add(portalDoor.object3d);
+        _this.el.object3D.add(portalDoor.object3d);
     },
     tick: () => {
-        this._portalDoor.update();
+        _this._portalDoor.update();
     },
 });
 
