@@ -16,6 +16,8 @@ AFRAME.registerComponent('arjs-portal-door', {
         },
     },
     init: () => {
+        var _this = this;
+
         let doorWidth = this.data.doorWidth;
         let doorHeight = this.data.doorHeight;
         let imageURL = this.data.url;
