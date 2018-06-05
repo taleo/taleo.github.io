@@ -1,185 +1,262 @@
 {
-  "accessors": [
-    {
-      "bufferView": 1,
-      "componentType": 5126,
-      "count": 5660,
-      "max": [
-        1.2050989866256714,
-        1.4293316602706909,
-        1.1266111135482788
-      ],
-      "min": [
-        -0.75086933374404907,
-        -0.5774993896484375,
-        -0.58401024341583252
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 1,
-      "byteOffset": 67920,
-      "componentType": 5126,
-      "count": 5660,
-      "max": [
-        0.99982267618179321,
-        0.9944157600402832,
-        0.99965816736221313
-      ],
-      "min": [
-        -0.99974554777145386,
-        -0.9966423511505127,
-        -0.99857765436172485
-      ],
-      "type": "VEC3"
-    },
-    {
-      "bufferView": 2,
-      "componentType": 5126,
-      "count": 5660,
-      "max": [
-        0.52941179275512695,
-        0.29803922772407532,
-        0.29803922772407532,
-        1
-      ],
-      "min": [
-        0.52941179275512695,
-        0.29803922772407532,
-        0.29803922772407532,
-        1
-      ],
-      "type": "VEC4"
-    },
-    {
-      "bufferView": 0,
-      "componentType": 5125,
-      "count": 29016,
-      "max": [
-        5659
-      ],
-      "min": [
-        0
-      ],
-      "type": "SCALAR"
-    }
-  ],
-  "asset": {
-    "extras": {
-      "author": "raptorgamingFR1 (https://sketchfab.com/raptorgamingFR1)",
-      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
-      "source": "https://sketchfab.com/models/83457ddd2543484580682d0da9dcc6ba",
-      "title": "GLITCHED TEXTURE"
-    },
-    "generator": "Sketchfab-3.18.3",
-    "version": "2.0"
-  },
-  "bufferViews": [
-    {
-      "buffer": 0,
-      "byteLength": 116064,
-      "byteOffset": 0,
-      "name": "floatBufferViews",
-      "target": 34963
-    },
-    {
-      "buffer": 0,
-      "byteLength": 135840,
-      "byteOffset": 116064,
-      "byteStride": 12,
-      "name": "floatBufferViews",
-      "target": 34962
-    },
-    {
-      "buffer": 0,
-      "byteLength": 90560,
-      "byteOffset": 251904,
-      "byteStride": 16,
-      "name": "floatBufferViews",
-      "target": 34962
-    }
-  ],
-  "buffers": [
-    {
-      "byteLength": 342464,
-      "uri": "scene.bin"
-    }
-  ],
-  "materials": [
-    {
-      "doubleSided": true,
-      "emissiveFactor": [
-        0,
-        0,
-        0
-      ],
-      "name": "specular",
-      "pbrMetallicRoughness": {
-        "baseColorFactor": [
-          0.80000000000000004,
-          0.80000000000000004,
-          0.80000000000000004,
-          1
-        ],
-        "metallicFactor": 0,
-        "roughnessFactor": 0.62393969069999999
+   "accessors" : [
+      {
+         "bufferView" : 0,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 3,
+         "max" : [
+            2.000000
+         ],
+         "min" : [
+            0.000000
+         ],
+         "type" : "SCALAR"
+      },
+      {
+         "bufferView" : 1,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 3,
+         "max" : [
+            0.000000,
+            1.000000,
+            0.000000,
+            1.000000
+         ],
+         "min" : [
+            0.000000,
+            -8.742278e-008,
+            0.000000,
+            -1.000000
+         ],
+         "type" : "VEC4"
+      },
+      {
+         "bufferView" : 2,
+         "byteOffset" : 0,
+         "componentType" : 5123,
+         "count" : 36,
+         "max" : [
+            35
+         ],
+         "min" : [
+            0
+         ],
+         "type" : "SCALAR"
+      },
+      {
+         "bufferView" : 3,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 36,
+         "max" : [
+            1.000000,
+            1.000000,
+            1.000001
+         ],
+         "min" : [
+            -1.000000,
+            -1.000000,
+            -1.000000
+         ],
+         "type" : "VEC3"
+      },
+      {
+         "bufferView" : 4,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 36,
+         "max" : [
+            1.000000,
+            1.000000,
+            1.000000
+         ],
+         "min" : [
+            -1.000000,
+            -1.000000,
+            -1.000000
+         ],
+         "type" : "VEC3"
+      },
+      {
+         "bufferView" : 5,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 36,
+         "max" : [
+            1.000000,
+            -0.000000,
+            -0.000000,
+            1.000000
+         ],
+         "min" : [
+            0.000000,
+            -0.000000,
+            -1.000000,
+            -1.000000
+         ],
+         "type" : "VEC4"
+      },
+      {
+         "bufferView" : 6,
+         "byteOffset" : 0,
+         "componentType" : 5126,
+         "count" : 36,
+         "max" : [
+            1.000000,
+            1.000000
+         ],
+         "min" : [
+            -1.000000,
+            -1.000000
+         ],
+         "type" : "VEC2"
       }
-    }
-  ],
-  "meshes": [
-    {
-      "primitives": [
-        {
-          "attributes": {
-            "COLOR_0": 2,
-            "NORMAL": 1,
-            "POSITION": 0
-          },
-          "indices": 3,
-          "material": 0,
-          "mode": 4
-        }
-      ]
-    }
-  ],
-  "nodes": [
-    {
-      "children": [
-        1
-      ],
-      "name": "RootNode (gltf orientation matrix)",
-      "rotation": [
-        -0.70710678118654746,
-        -0,
-        -0,
-        0.70710678118654757
-      ]
-    },
-    {
-      "children": [
-        2
-      ],
-      "name": "RootNode (model correction matrix)"
-    },
-    {
-      "children": [
-        3
-      ],
-      "name": "model.obj.cleaner.materialmerger.gles"
-    },
-    {
-      "mesh": 0,
-      "name": ""
-    }
-  ],
-  "scene": 0,
-  "scenes": [
-    {
-      "name": "OSG_Scene",
-      "nodes": [
-        0
-      ]
-    }
-  ]
+   ],
+   "animations" : [
+      {
+         "channels" : [
+            {
+               "sampler" : 0,
+               "target" : {
+                  "node" : 0,
+                  "path" : "rotation"
+               }
+            }
+         ],
+         "name" : "animation_AnimatedCube",
+         "samplers" : [
+            {
+               "input" : 0,
+               "interpolation" : "LINEAR",
+               "output" : 1
+            }
+         ]
+      }
+   ],
+   "asset" : {
+      "generator" : "VKTS glTF 2.0 exporter",
+      "version" : "2.0"
+   },
+   "bufferViews" : [
+      {
+         "buffer" : 0,
+         "byteLength" : 12,
+         "byteOffset" : 0
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 48,
+         "byteOffset" : 12
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 72,
+         "byteOffset" : 60,
+         "target" : 34963
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 432,
+         "byteOffset" : 132,
+         "target" : 34962
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 432,
+         "byteOffset" : 564,
+         "target" : 34962
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 576,
+         "byteOffset" : 996,
+         "target" : 34962
+      },
+      {
+         "buffer" : 0,
+         "byteLength" : 288,
+         "byteOffset" : 1572,
+         "target" : 34962
+      }
+   ],
+   "buffers" : [
+      {
+         "byteLength" : 1860,
+         "uri" : "AnimatedCube.bin"
+      }
+   ],
+   "images" : [
+      {
+         "uri" : "AnimatedCube_BaseColor.png"
+      },
+      {
+         "uri" : "AnimatedCube_MetallicRoughness.png"
+      }
+   ],
+   "materials" : [
+      {
+         "name" : "AnimatedCube",
+         "pbrMetallicRoughness" : {
+            "baseColorTexture" : {
+               "index" : 0
+            },
+            "metallicRoughnessTexture" : {
+               "index" : 1
+            }
+         }
+      }
+   ],
+   "meshes" : [
+      {
+         "name" : "AnimatedCube",
+         "primitives" : [
+            {
+               "attributes" : {
+                  "NORMAL" : 4,
+                  "POSITION" : 3,
+                  "TANGENT" : 5,
+                  "TEXCOORD_0" : 6
+               },
+               "indices" : 2,
+               "material" : 0,
+               "mode" : 4
+            }
+         ]
+      }
+   ],
+   "nodes" : [
+      {
+         "mesh" : 0,
+         "name" : "AnimatedCube",
+         "rotation" : [
+            0.000000,
+            -1.000000,
+            0.000000,
+            0.000000
+         ]
+      }
+   ],
+   "samplers" : [
+      {}
+   ],
+   "scene" : 0,
+   "scenes" : [
+      {
+         "nodes" : [
+            0
+         ]
+      }
+   ],
+   "textures" : [
+      {
+         "sampler" : 0,
+         "source" : 0
+      },
+      {
+         "sampler" : 0,
+         "source" : 1
+      }
+   ]
 }
-
